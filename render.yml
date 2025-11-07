@@ -1,0 +1,83 @@
+# ==========================================
+# KUMAJALA Backend - Configuration Render
+# ==========================================
+# Placez ce fichier à la racine de votre repo
+# Render le détectera automatiquement
+
+services:
+  # Service Backend API
+  - type: web
+    name: kumajala-api
+    runtime: docker
+    
+    # Chemin vers le Dockerfile
+    dockerfilePath: ./kumajala-backend/Dockerfile
+    dockerContext: ./kumajala-backend
+    
+    # Configuration du service
+    plan: free  # Options: free, starter, standard, pro
+    region: frankfurt  # Choisir la région la plus proche (frankfurt pour Europe)
+    
+    # Branch à déployer
+    branch: main
+    
+    # Configuration du build
+    buildCommand: echo "Building with Docker..."
+    
+    # Health check
+    healthCheckPath: /health
+    
+    # Variables d'environnement
+    envVars:
+      # Flask Configuration
+      - key: FLASK_ENV
+        value: production
+      
+      - key: FLASK_HOST
+        value: 0.0.0.0
+      
+      - key: PORT
+        value: 5000
+      
+      # Secret Key (à générer avec: python -c "import secrets; print(secrets.token_hex(32))")
+      - key: SECRET_KEY
+        generateValue: true  # Render génère automatiquement
+      
+      # CORS - Autoriser votre frontend Vercel
+      # Remplacez par votre vraie URL Vercel après déploiement
+      - key: CORS_ORIGINS
+        value: https://kumajala.vercel.app,https://*.vercel.app
+      
+      # Gemini API Key (à configurer dans le dashboard Render)
+      - key: GEMINI_API_KEY
+        sync: false  # À définir manuellement dans le dashboard pour la sécurité
+      
+      # Google Cloud Credentials (optionnel)
+      # Si vous utilisez Firestore, ajoutez le JSON en tant que secret
+      # - key: GOOGLE_APPLICATION_CREDENTIALS
+      #   sync: false
+      
+      # Cache Configuration
+      - key: CACHE_TTL
+        value: 3600
+      
+      - key: AUDIO_CACHE_SIZE
+        value: 100
+      
+      # Logging
+      - key: LOG_LEVEL
+        value: INFO
+      
+      # Storage Mode
+      - key: STORAGE_MODE
+        value: local
+      
+      - key: LOCAL_DATA_PATH
+        value: /app/data/language.json
+    
+    # Redémarrage automatique
+    autoDeploy: true
+    
+    # Domaine personnalisé (optionnel)
+    # domains:
+    #   - api.kumajala.org

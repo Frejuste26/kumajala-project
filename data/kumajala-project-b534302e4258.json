@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "kumajala-project",
+  "private_key_id": "b534302e4258b6ce54c586c5839addfee2581514",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC8XzyUwMftWeQO\n1b6xbWImPS0UhcVOGcbKiHzMWe9JhzZrJlu71fAhEu3Wll/xMiQTsV+mgFjHZ2gY\n/PGNZMLUMeZHqT50qvcQvEk+hSu5M93Rb+YIi85gRdE+Njv9IJ29YTP9vN3qfauv\nRoaA+5fTTnHFyDFDhqC/wiZVFleeCMQ1QQgMEjUXdC3N/cAUfi8lokNDROtTn2+1\n6IweNkTC8pVjJyOtYGA0FxJg2r0UlI995y0dyOmGn9v3J5tQOz4nqOAXRJKch3Z2\nYyjRhAFLMV/ZieZbVpqso83ObcxGv2luy8crKRz5zakjxyXy1MkXpfSBw08WYdS8\n3mAFsIzVAgMBAAECggEAHfYn9KEVK7N4isOEqUP0sJBac0EzuNBwxhYfg4Fqhg9z\noGdhf+bvYtNX8SHJ8NtA0cEMrbcMZ+sSq6bP5OV597ZYIl3RCU2ILqlEHSWhZrvR\nNFbQB9v032s7dOG7eO+PJ2gmlN1NjtaeUCqviiR6aam4fvTwoQTw3I9M+YusM/56\n+uuwWoQZ2GvTRKPwwTXur1F/VJFv0/3ou77uIBsnAuA5Yv7NFQPW8H8RcoH/Ng3V\naonI9yDV3/7NuCZMR1JrJdrIJguKLuCcpoMXsLWq4xIavjhm0QxMKDlGgSIn3Ax3\n1qxlf+mZWXOF6HlFFr9UV0uFtvH3Px2F/sX1FIQAoQKBgQDpOq/yfEXmt9qUa7By\nPDVk8iUiLsaoXqfVT0sD3LWbopAlP7NHzzb4Wdo6QLMUXWa94AobOh1xEshmg0CV\nzhvAjjoWcCuhXnW2D8JkoknAo6s+MKdueXNhkD1ExPItUxlAGDErMRLUfvTMdZxW\n//5VX/hrWky6MRLdMW9wRth4YwKBgQDOw2Q1bxMf5UGvxSVJyflrLWTM15GapUGO\nYCPfHn/lfbn1dluw8ZbwSt0dox2YzNz8C4NkxvDl3Z+3sFEBoylzLgPCwYe+4wkF\nL9G7P/4LZJoHUyWJh29f5qGB56yEePIZiydgJPCHqw8aeFrOjiL/1YtsaLLxNb5v\nrbftuFV/ZwKBgQCVPjGy2GUek02ypgqdvvtn4i9y5T3IJfH95KSbDxPDSM42l8GQ\nVP/XAiBMIHS3tmD1ZbTx4UlPvvYv6xNcCSznFdwD2bmBpGFspD7/iH3rYJBG1nl9\njwgPSW57YA+cg01oH1LvUZK8GZVqdGQbo+pLFYNwprLsflSU6Hpn/V2uAwKBgQCO\nWkYm58dyAURdQM1wZSdc3A73XT95Cmf9H0HzPqttlEcwsYFlbJ+v5ssfuYsKBZnr\nyf13p+R5TkHFlRXgm7ZQ/5BFSTsteGBgetDaK6+7plLJ0jwY2O8cRsxRhPDo7+A3\nJ/A/KI+VyHcIkW5rob6FB0ALrnXszkTD3QWyHGR45wKBgHn9Lnvt4/WoX7bCOJo5\npUjUyLNmEOFsTwFHSN8+2Y9UrBhBhDQGFWxUPhU2F4Vt+VjWvtJRJaxO1Uj6pLHb\nuXRyu34P02Q/64sFnyjsFWPe9ZEbopC0eQ+h9y5QP6HYzZqV9o8i5lCMU2RAmnQ9\nlMh7z4wmfidcPLB9Rhhu3tmL\n-----END PRIVATE KEY-----\n",
+  "client_email": "kumajala-firestore-service@kumajala-project.iam.gserviceaccount.com",
+  "client_id": "101519847611804006735",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kumajala-firestore-service%40kumajala-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
